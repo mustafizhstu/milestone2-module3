@@ -1,65 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid practice</title>
-    <style>
-        .grid-container{
-        font-size: 20px;
-        background-color:#eee;
-        width: 700px;
-        margin: 50px 0 0 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows:repeat(3,150px);
-        grid-gap: 20px;
-    }
-   
-    .item1{
-        background-color: #c8c5d1;
-        grid-column: 3/ 4;
-        grid-row:2/3;
-        z-index: 1;
-       
-    }
-    .item2{
-        background-color: #fafe45;
-        grid-row: 1/4;
-        grid-column: 2/3;
-        z-index: 1;
-    }
-    .item3{
-        background-color: #8f8130;
-        
-        grid-row: 2/span 3;
-    }
-    .item4{
-        background-color: #8943da;
-        grid-column: 2/4;
-        grid-row: 2/3;
-    }
-    .item5{
-        background-color: #e24977;
-    }
-    .item6{
-        background-color: #4fcea8;
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-    </style>
-</head>
-<body>
-    <h1>Grid practice
-    </h1>
-    <div class="grid-container">
-        <div class="items item1">First</div>
-        <div class="items item2">Second</div>
-        <div class="items item3">Third</div>
-        <div class="items item4">Fourth</div>
-        <div class="items item5">Fifth</div>
-        <div class="items item6">Sixth</div>
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <script src="https://kit.fontawesome.com/fc581ee58c.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="links">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Orders</a></li>
+          <li><a href="">About us</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a href=""><i class="fas fa-user-circle"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-sign-out-alt"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="log-in">
+      <form action="" class="form">
+        <h1>Log in Form</h1>
+        <input type="email" name="email" id="" placeholder="Your email" />
+        <input type="password" name="password" id="" placeholder="Your password" />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="calender">
+      <div class="calender-header">The calender of the two month of the year 2021.</div>
+      <div class="calender-area">
+        <div class="grid-container">
+          <div class="month-name">July 2021</div>
+          <div class="date day-name">Sun</div>
+          <div class="date day-name">Mon</div>
+          <div class="date day-name">Tue</div>
+          <div class="date day-name">Wed</div>
+          <div class="date day-name">Thus</div>
+          <div class="date day-name">Fri</div>
+          <div class="date day-name">Sat</div>
+          <div class="date other-month">27</div>
+          <div class="date other-month">28</div>
+          <div class="date other-month">29</div>
+          <div class="date other-month">30</div>
+          <div class="date">1</div>
+          <div class="date">2</div>
+          <div class="date">3</div>
+          <div class="date">4</div>
+          <div class="date">5</div>
+          <div class="date">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date">9</div>
+          <div class="date">10</div>
+          <div class="date">11</div>
+          <div class="date">12</div>
+          <div class="date">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date">16</div>
+          <div class="date">17</div>
+          <div class="date">18</div>
+          <div class="date">19</div>
+          <div class="date">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date">23</div>
+          <div class="date">24</div>
+          <div class="date">25</div>
+          <div class="date">26</div>
+          <div class="date">27</div>
+          <div class="date">28</div>
+          <div class="date">29</div>
+          <div class="date">30</div>
+          <div class="date">31</div>
+        </div>
+        <div class="grid-container">
+          <div class="month-name">August 2021</div>
+          <div class="date day-name">Sun</div>
+          <div class="date day-name">Mon</div>
+          <div class="date day-name">Tue</div>
+          <div class="date day-name">Wed</div>
+          <div class="date day-name">Thus</div>
+          <div class="date day-name">Fri</div>
+          <div class="date day-name">Sat</div>
+          <div class="date">1</div>
+          <div class="date">2</div>
+          <div class="date">3</div>
+          <div class="date">4</div>
+          <div class="date">5</div>
+          <div class="date">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date">9</div>
+          <div class="date">10</div>
+          <div class="date">11</div>
+          <div class="date">12</div>
+          <div class="date">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date">16</div>
+          <div class="date">17</div>
+          <div class="date">18</div>
+          <div class="date">19</div>
+          <div class="date">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date">23</div>
+          <div class="date">24</div>
+          <div class="date">25</div>
+          <div class="date">26</div>
+          <div class="date">27</div>
+          <div class="date">28</div>
+          <div class="date">29</div>
+          <div class="date">30</div>
+          <div class="date">31</div>
+          <div class="date other-month">1</div>
+          <div class="date other-month">2</div>
+          <div class="date other-month">3</div>
+          <div class="date other-month">4</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="album">
+      <h1>This is the example of photo album</h1>
+      <h2>Tiger album</h2>
+      <div class="photo-album">
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="images/ttt.jfif" alt="" /></div>
+
+          <div class="photo-details">
+            <h3>This is Royel Bengal tiger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi sit fuga
+              delectus. Earum sunt fuga, delectus ex dolores laboriosam commodi a vitae magnam
+              maxime. Odio cum odit repudiandae quo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
