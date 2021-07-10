@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practice</title>
+    <style>
+        .grid-container{
+        font-size: 20px;
+        background-color:#eee;
+        width: 700px;
+        margin: 50px 0 0 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:repeat(3,150px);
+        grid-gap: 20px;
+    }
+   
+    .item1{
+        background-color: #c8c5d1;
+        grid-column: 3/ 4;
+        grid-row:2/3;
+        z-index: 1;
+       
+    }
+    .item2{
+        background-color: #fafe45;
+        grid-row: 1/4;
+        grid-column: 2/3;
+        z-index: 1;
+    }
+    .item3{
+        background-color: #8f8130;
+        
+        grid-row: 2/span 3;
+    }
+    .item4{
+        background-color: #8943da;
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .item5{
+        background-color: #e24977;
+    }
+    .item6{
+        background-color: #4fcea8;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    </style>
+</head>
+<body>
+    <h1>Grid practice
+    </h1>
+    <div class="grid-container">
+        <div class="items item1">First</div>
+        <div class="items item2">Second</div>
+        <div class="items item3">Third</div>
+        <div class="items item4">Fourth</div>
+        <div class="items item5">Fifth</div>
+        <div class="items item6">Sixth</div>
+    </div>
+</body>
+</html>
