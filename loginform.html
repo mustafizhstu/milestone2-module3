@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <script src="https://kit.fontawesome.com/fc581ee58c.js" crossorigin="anonymous"></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      nav{
+          display: flex;
+          justify-content:space-between;
+          background-color: #33d49f;
+          padding: 1.2em 1em;
+      }
+      nav  ul{
+          display: flex;
+          list-style-type: none;
+          
+      }
+       nav a{
+        color:#2b2626;
+        font-size: 1.2em;
+        text-decoration: none;      
+      } 
+      nav ul li:hover{
+            background-color: #808080;
+            transition: background-color 0.5s linear;
+      }
+      nav .links li{
+        padding: .5em 1em;
+        margin-right: 3em;
+        border-radius:  5%;     
+      }
+      nav .icons li{
+         padding:.5em .5em;
+         margin-right: 1em;
+         border-radius: 50%;
+      }
+     
+      .log-in {
+        display: flex;
+        justify-content: center;
+        padding-top: 3em;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .form input,
+      button {
+         
+        font-size: 1.5em;
+        margin-top: 10px;
+        border: 1px solid sienna;
+        border-radius: 5px;
+      }
+      button {
+        cursor: pointer;
+        background-color: rgb(73, 23, 48);
+        color: silver;
+        font-size: 1.3em;
+        font-weight: 700;
+        padding:.2em;
+        
+      }
+      .form input:focus{
+        background-color: #509696;
+        color: #63fc63;
+        border: 1px solid black;
+        padding:.1em;
+      }
+      .form input::placeholder{
+        color: #f56868;
+        padding-left: .7em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="links">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Orders</a></li>
+          <li><a href="">About us</a></li>
+        </ul>
+       <ul class="icons"> 
+         <li><a href=""><i class="fas fa-user-circle"></i></a></li>
+           <li>
+               <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+           </li>
+           <li>
+                <a href=""><i class="fas fa-sign-out-alt"></i></a>
+           </li>
+          
+       </ul>
+      </nav>
+    </header>
+    <section class="log-in">
+      <form action="" class="form">
+        <h1>Log in Form</h1>
+        <input type="email" name="email" id="" placeholder="Your email" />
+        <input type="password" name="password" id="" placeholder="Your password" />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    
+  </body>
+</html>
